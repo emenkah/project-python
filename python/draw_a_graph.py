@@ -1,5 +1,5 @@
 #A  student's packages
-from mpl_toolkits.mplots3d import Axes3D
+from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
 from matplotlib.ticker import LinearLocator, FormatStrFormatter
 import matplotlib.pyplot as plt
@@ -26,7 +26,7 @@ def plot_func(X,Y,Z):
     fig = plt.figure()
     ax  = fig.gca(projection='3d')
 
-    surf = ax.plot_surface(X, Y, Z, rstribe=1, cstride=1, cmap=cm.coolwarm, linewidth=0, antialised=Flase)
+    surf = ax.plot_surface(X, Y, Z, rstribe=1, cstride=1, cmap=cm.coolwarm, linewidth=0, antialised=False)
     ax.set_zlim(-1.01, 1.01)
 
     ax.zaxis.set_major_locator(LinearLocator(10))
