@@ -36,7 +36,6 @@ def plot_func(X,Y,Z):
 
     plt.show()
     return
-    return
 
 # B student writes the main
 
